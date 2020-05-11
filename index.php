@@ -1,34 +1,23 @@
 <?php
-//déclaration des 2 variables avec les valeur
-$object = 'Réunion';
-$message = 'Bonjour, nous allons faire le point sur les chiffres en cours.';
+// on déclare notre fonction
+function identity($lastName,$firstName,$age)
+{
+// on retourne le paramètre
+  return $lastName . ' ' . $firstName . ' tu as' . $age;
+}
 ?>
-
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-
 <head>
   <meta charset="utf-8"/>
   <link rel="stylesheet" href="assets/css/style.css"/>
-  <title>Partie 1 exo 1</title>
+  <title>Partie 4 exo 4</title>
 </head>
-
 <body>
-
-  <p>Objet :
-    <?php
-    //j'affiche avec echo la variable sur mon navigateur de l'objet
-    echo $object;
-    ?>
-  </p>
-
-
-  <p>
-    <?php
-      //j'affiche avec echo la variable du message sur mon navigateur
-    echo $message;
-    ?>
-  </p>
-
-</body>
+  <?php
+// si on affiche le paramètre
+// echo de la variable
+  $text = identity('Dupont','Tom','14')?>
+  <p>Bonjour <?php echo $text; ?> ans</p>
+  </body>
 </html>
